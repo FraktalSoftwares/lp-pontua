@@ -11,7 +11,7 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="#" className="hidden text-foreground hover:text-primary transition-colors font-medium">
               Início
             </a>
             <a href="https://app.pontuaai.com/login_escola?step=login" className="text-foreground hover:text-primary transition-colors font-medium">

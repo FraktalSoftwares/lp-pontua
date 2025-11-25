@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import faqBackground from "@/assets/faq-background.png";
 
 const FAQSection = () => {
   const faqsColumn1 = [
@@ -46,7 +47,10 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-navy-deep">
+    <section 
+      className="py-20 bg-navy-deep bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${faqBackground})` }}
+    >
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">

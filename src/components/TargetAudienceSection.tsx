@@ -1,25 +1,25 @@
 import { Button } from "@/components/ui/button";
-import { UserCheck, Building2, GraduationCap } from "lucide-react";
+import { Clock, CheckCircle2 } from "lucide-react";
 
 const TargetAudienceSection = () => {
   const audiences = [
     {
-      icon: UserCheck,
+      icon: Clock,
       title: "Professores e corretores",
       description: "Professores e corretores que querem mais eficiência e precisão na correção de redações.",
-      variant: "green" as const,
+      variant: "white" as const,
     },
     {
-      icon: Building2,
+      icon: CheckCircle2,
       title: "Gestores escolares",
-      description: "Gestores escolares que desejam acompanhar a qualidade dos correções e a evolução dos alunos.",
+      description: "Gestores escolares que desejam acompanhar a qualidade das correções e a evolução dos alunos.",
       variant: "blue" as const,
     },
     {
-      icon: GraduationCap,
+      icon: Clock,
       title: "Escolas e cursinhos",
-      description: "Escolas e cursinhos que buscam uma solução moderna e baseada em inteligência artificial para potencializar o ensino da escrita.",
-      variant: "green" as const,
+      description: "Escolas e cursinhos que buscam uma solução moderna e baseada em inteligência artificial para potencializar o ensino da escrita,",
+      variant: "white" as const,
     },
   ];
 
@@ -35,31 +35,31 @@ const TargetAudienceSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
           {audiences.map((audience, index) => (
             <div
               key={index}
-              className={`p-8 rounded-2xl ${
+              className={`p-8 rounded-3xl shadow-sm ${
                 audience.variant === "blue"
                   ? "bg-navy-deep text-white"
-                  : "bg-green-light text-foreground"
+                  : "bg-white text-foreground"
               }`}
             >
               <div
-                className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${
                   audience.variant === "blue"
-                    ? "bg-white/20"
-                    : "bg-green-icon/20"
+                    ? "bg-blue-400/80"
+                    : "bg-green-light"
                 }`}
               >
                 <audience.icon
-                  className={`w-6 h-6 ${
+                  className={`w-8 h-8 ${
                     audience.variant === "blue" ? "text-white" : "text-green-icon"
                   }`}
                 />
               </div>
               <h3 className="text-xl font-bold mb-3">{audience.title}</h3>
-              <p className={audience.variant === "blue" ? "text-white/90" : "text-foreground/80"}>
+              <p className={audience.variant === "blue" ? "text-white/90" : "text-foreground/70"}>
                 {audience.description}
               </p>
             </div>

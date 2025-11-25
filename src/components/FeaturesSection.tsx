@@ -1,6 +1,7 @@
 import iconPropostas from "@/assets/icon-propostas.png";
 import iconAgilidade from "@/assets/icon-agilidade.png";
 import iconMonitoramento from "@/assets/icon-monitoramento.png";
+import featuresImage from "@/assets/features-image.png";
 
 const FeaturesSection = () => {
   const features = [
@@ -33,11 +34,10 @@ const FeaturesSection = () => {
 
         <div className="grid md:grid-cols-2 gap-16 items-center mt-16">
           <div className="relative">
-            <div className="absolute -left-8 top-0 w-64 h-64 bg-gray-200 rounded-full"></div>
             <img 
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop" 
-              alt="Professor apresentando" 
-              className="relative z-10 rounded-2xl shadow-xl"
+              src={featuresImage} 
+              alt="Interface do PontuaAI" 
+              className="relative z-10 rounded-2xl w-full h-auto"
             />
           </div>
 

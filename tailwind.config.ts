@@ -70,6 +70,7 @@ export default {
           light: "hsl(var(--green-light))",
           icon: "hsl(var(--green-icon))",
         },
+        "blue-cta": "hsl(var(--blue-cta))",
       },
       borderRadius: {
         lg: "var(--radius)",

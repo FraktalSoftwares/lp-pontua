@@ -1,6 +1,6 @@
-import { CheckSquare } from "lucide-react";
 import iconPropostas from "@/assets/icon-propostas.png";
 import iconAgilidade from "@/assets/icon-agilidade.png";
+import iconMonitoramento from "@/assets/icon-monitoramento.png";
 
 const FeaturesSection = () => {
   const features = [
@@ -17,7 +17,8 @@ const FeaturesSection = () => {
       description: "Corrija redações com mais rapidez e precisão, respeitando gêneros e competências exigidos",
     },
     {
-      icon: CheckSquare,
+      icon: null,
+      iconImage: iconMonitoramento,
       title: "Monitoramento da evolução",
       description: "Monitore a evolução dos alunos e a qualidade das correções dos professores",
     },

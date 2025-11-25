@@ -39,7 +39,7 @@ const TargetAudienceSection = () => {
           {audiences.map((audience, index) => (
           <div
             key={index}
-            className={`rounded-3xl shadow-sm transition-transform duration-300 hover:-translate-y-2 ${
+            className={`rounded-3xl shadow-sm transition-transform duration-300 hover:-translate-y-6 ${
               audience.variant === "blue"
                 ? "flex flex-col items-start p-8 gap-4 rounded-2xl text-white relative overflow-hidden"
                 : "p-8 bg-white text-foreground"

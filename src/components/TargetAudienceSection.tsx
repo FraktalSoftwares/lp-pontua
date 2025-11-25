@@ -41,7 +41,7 @@ const TargetAudienceSection = () => {
               key={index}
               className={`rounded-3xl shadow-sm ${
                 audience.variant === "blue"
-                  ? "flex flex-col items-start p-8 gap-4 rounded-2xl text-white relative before:absolute before:bottom-0 before:left-0 before:right-0 before:h-1 before:rounded-b-2xl"
+                  ? "flex flex-col items-start p-8 gap-4 rounded-2xl text-white relative overflow-hidden"
                   : "p-8 bg-white text-foreground"
               }`}
               style={

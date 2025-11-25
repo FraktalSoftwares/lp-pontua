@@ -43,8 +43,8 @@ const FeaturesSection = () => {
 
           <div className="space-y-8 mx-auto md:mx-0 max-w-lg md:max-w-none">
             {features.map((feature, index) => (
-              <div key={index} className="group flex items-start gap-4 relative pb-4">
-                <div className="absolute left-1/2 -translate-x-1/2 bottom-0 h-0.5 bg-border-accent origin-center transition-all duration-300 w-1/2 group-hover:w-full" />
+              <div key={index} className="group flex items-start gap-4 relative pl-4">
+                <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-navy-deep origin-top transition-all duration-300 h-1/2 group-hover:h-full" />
                 <div className="flex-shrink-0 w-14 h-14 rounded-full bg-navy-deep flex items-center justify-center overflow-hidden">
                   {feature.iconImage ? (
                     <img src={feature.iconImage} alt="" className="w-full h-full object-cover" />

@@ -37,13 +37,13 @@ const TargetAudienceSection = () => {
 
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
           {audiences.map((audience, index) => (
-            <div
-              key={index}
-              className={`rounded-3xl shadow-sm ${
-                audience.variant === "blue"
-                  ? "flex flex-col items-start p-8 gap-4 rounded-2xl text-white relative overflow-hidden"
-                  : "p-8 bg-white text-foreground"
-              }`}
+          <div
+            key={index}
+            className={`rounded-3xl shadow-sm transition-transform duration-300 hover:-translate-y-2 ${
+              audience.variant === "blue"
+                ? "flex flex-col items-start p-8 gap-4 rounded-2xl text-white relative overflow-hidden"
+                : "p-8 bg-white text-foreground"
+            }`}
               style={
                 audience.variant === "blue"
                   ? {

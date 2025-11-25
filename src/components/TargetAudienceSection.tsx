@@ -41,7 +41,7 @@ const TargetAudienceSection = () => {
               key={index}
               className={`p-8 rounded-3xl shadow-sm ${
                 audience.variant === "blue"
-                  ? "bg-navy-deep text-white"
+                  ? "bg-gradient-to-b from-navy-deep via-blue-cta to-pink-primary text-white"
                   : "bg-white text-foreground"
               }`}
             >

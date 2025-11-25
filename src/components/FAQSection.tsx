@@ -67,7 +67,7 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-white/20 rounded-lg px-6 bg-white/5 backdrop-blur-sm"
+                className="border border-white/20 rounded-lg px-6 bg-white/5 backdrop-blur-sm transition-colors duration-300 hover:border-[#E737A3]"
               >
                 <AccordionTrigger className="text-white hover:no-underline text-left">
                   {faq.question}
@@ -84,7 +84,7 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index + 4}`}
-                className="border border-white/20 rounded-lg px-6 bg-white/5 backdrop-blur-sm"
+                className="border border-white/20 rounded-lg px-6 bg-white/5 backdrop-blur-sm transition-colors duration-300 hover:border-[#E737A3]"
               >
                 <AccordionTrigger className="text-white hover:no-underline text-left">
                   {faq.question}

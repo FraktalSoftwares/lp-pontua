@@ -1,19 +1,19 @@
-import { FileText, Zap, TrendingUp } from "lucide-react";
+import { GraduationCap, Sparkles, CheckSquare } from "lucide-react";
 
 const FeaturesSection = () => {
   const features = [
     {
-      icon: FileText,
+      icon: GraduationCap,
       title: "Propostas otimizadas",
       description: "Otimize a criação de propostas para redações com base nos principais vestibulares do Brasil",
     },
     {
-      icon: Zap,
+      icon: Sparkles,
       title: "Agilidade e precisão",
       description: "Corrija redações com mais rapidez e precisão, respeitando gêneros e competências exigidos",
     },
     {
-      icon: TrendingUp,
+      icon: CheckSquare,
       title: "Monitoramento da evolução",
       description: "Monitore a evolução dos alunos e a qualidade das correções dos professores",
     },

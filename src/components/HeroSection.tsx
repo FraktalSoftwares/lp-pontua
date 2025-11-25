@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import ipadImage from "@/assets/ipad-mini.png";
+import heroBackground from "@/assets/hero-background.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-navy-deep pt-24 pb-16 overflow-hidden">
+    <section className="relative min-h-screen pt-24 pb-16 overflow-hidden" style={{ backgroundImage: `url(${heroBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       {/* Decorative circles */}
       <div className="absolute top-20 right-1/4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
       <div className="absolute top-40 left-1/3 w-16 h-16 bg-red-500/20 rounded-full blur-xl"></div>

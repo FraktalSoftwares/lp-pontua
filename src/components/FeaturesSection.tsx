@@ -26,14 +26,14 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background relative">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground max-w-4xl mx-auto">
           Crie propostas de redação alinhadas aos vestibulares e avalie o desempenho de alunos e professores com inteligência artificial
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center mt-16">
-          <div className="relative">
+        <div className="grid md:grid-cols-2 gap-16 items-center mt-16 pb-32">
+          <div className="relative z-20">
             <img 
               src={featuresImage} 
               alt="Interface do PontuaAI" 

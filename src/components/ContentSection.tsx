@@ -4,7 +4,7 @@ import contentBackground from "@/assets/content-background.png";
 
 const ContentSection = () => {
   return (
-    <section className="py-20 relative overflow-hidden" style={{ backgroundImage: `url(${contentBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section className="py-12 pt-0 relative overflow-hidden -mt-20" style={{ backgroundImage: `url(${contentBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-white">

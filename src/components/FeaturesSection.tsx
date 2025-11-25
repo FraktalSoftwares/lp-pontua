@@ -1,9 +1,11 @@
-import { GraduationCap, Sparkles, CheckSquare } from "lucide-react";
+import { Sparkles, CheckSquare } from "lucide-react";
+import iconPropostas from "@/assets/icon-propostas.png";
 
 const FeaturesSection = () => {
   const features = [
     {
-      icon: GraduationCap,
+      icon: null,
+      iconImage: iconPropostas,
       title: "Propostas otimizadas",
       description: "Otimize a criação de propostas para redações com base nos principais vestibulares do Brasil",
     },
@@ -40,7 +42,11 @@ const FeaturesSection = () => {
             {features.map((feature, index) => (
               <div key={index} className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-14 h-14 rounded-full bg-navy-deep flex items-center justify-center">
-                  <feature.icon className="w-6 h-6 text-white" />
+                  {feature.iconImage ? (
+                    <img src={feature.iconImage} alt="" className="w-6 h-6" />
+                  ) : (
+                    <feature.icon className="w-6 h-6 text-white" />
+                  )}
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-blue-title mb-2">{feature.title}</h3>

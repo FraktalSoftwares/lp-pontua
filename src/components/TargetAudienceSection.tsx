@@ -55,16 +55,16 @@ const TargetAudienceSection = () => {
                     }
               }
             >
-              {audience.variant === "blue" && (
-                <div 
-                  className="absolute bottom-0 left-0 right-0 h-1"
-                  style={{
-                    background: "linear-gradient(90deg, #9595E8 0%, #E737A3 100%)",
-                    borderBottomLeftRadius: "16px",
-                    borderBottomRightRadius: "16px",
-                  }}
-                />
-              )}
+              <div 
+                className={`absolute bottom-0 left-0 right-0 h-1 transition-opacity duration-300 ${
+                  audience.variant === "blue" ? "opacity-100" : "opacity-0 hover:opacity-100"
+                }`}
+                style={{
+                  background: "linear-gradient(90deg, #9595E8 0%, #E737A3 100%)",
+                  borderBottomLeftRadius: "16px",
+                  borderBottomRightRadius: "16px",
+                }}
+              />
               <div
                 className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${
                   audience.variant === "blue"

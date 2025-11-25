@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 import pontuaLogo from "@/assets/pontua-logo.svg";
 import footerBackground from "@/assets/footer-background.png";
 
@@ -13,12 +13,6 @@ const Footer = () => {
           <img src={pontuaLogo} alt="PontuaAI" className="h-10 brightness-0 invert" />
           
           <div className="flex gap-4">
-            <a
-              href="#"
-              className="w-10 h-10 rounded-full bg-navy-light flex items-center justify-center hover:bg-navy-primary transition-colors"
-            >
-              <Facebook className="w-5 h-5 text-white" />
-            </a>
             <a
               href="#"
               className="w-10 h-10 rounded-full bg-navy-light flex items-center justify-center hover:bg-navy-primary transition-colors"

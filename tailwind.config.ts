@@ -72,6 +72,7 @@ export default {
         },
         "blue-cta": "hsl(var(--blue-cta))",
         "blue-title": "hsl(var(--blue-title))",
+        "border-accent": "hsl(var(--border-accent))",
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -71,6 +71,7 @@ export default {
           icon: "hsl(var(--green-icon))",
         },
         "blue-cta": "hsl(var(--blue-cta))",
+        "blue-title": "hsl(var(--blue-title))",
       },
       borderRadius: {
         lg: "var(--radius)",

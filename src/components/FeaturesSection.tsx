@@ -1,5 +1,6 @@
-import { Sparkles, CheckSquare } from "lucide-react";
+import { CheckSquare } from "lucide-react";
 import iconPropostas from "@/assets/icon-propostas.png";
+import iconAgilidade from "@/assets/icon-agilidade.png";
 
 const FeaturesSection = () => {
   const features = [
@@ -10,7 +11,8 @@ const FeaturesSection = () => {
       description: "Otimize a criação de propostas para redações com base nos principais vestibulares do Brasil",
     },
     {
-      icon: Sparkles,
+      icon: null,
+      iconImage: iconAgilidade,
       title: "Agilidade e precisão",
       description: "Corrija redações com mais rapidez e precisão, respeitando gêneros e competências exigidos",
     },

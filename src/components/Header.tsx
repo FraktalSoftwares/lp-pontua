@@ -17,7 +17,7 @@ const Header = () => {
             <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
               Login
             </a>
-            <Button variant="cta" size="lg">
+            <Button variant="cta" size="lg" className="hidden">
               Assinar agora
             </Button>
           </nav>

@@ -98,7 +98,7 @@ const FAQSection = () => {
         </div>
 
         <div className="text-center">
-          <Button variant="pink" size="lg">
+          <Button variant="pink" size="lg" className="hidden">
             Assinar agora
           </Button>
         </div>

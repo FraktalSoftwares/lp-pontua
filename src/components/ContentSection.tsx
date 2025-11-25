@@ -11,7 +11,7 @@ const ContentSection = () => {
             <p className="text-lg leading-relaxed mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <Button variant="pink" size="lg">
+            <Button variant="pink" size="lg" className="hidden">
               Assinar agora
             </Button>
           </div>

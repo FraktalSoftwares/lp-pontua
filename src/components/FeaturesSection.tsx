@@ -33,7 +33,7 @@ const FeaturesSection = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-16 items-center mt-16">
-          <div className="relative z-20">
+          <div className="relative z-20 mx-auto md:mx-0">
             <img 
               src={featuresImage} 
               alt="Interface do PontuaAI" 
@@ -41,7 +41,7 @@ const FeaturesSection = () => {
             />
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-8 mx-auto md:mx-0 max-w-lg md:max-w-none">
             {features.map((feature, index) => (
               <div key={index} className="group flex items-start gap-4 relative pl-4">
                 <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-navy-deep origin-top transition-all duration-300 h-1/2 group-hover:h-full" />

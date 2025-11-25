@@ -39,9 +39,9 @@ const TargetAudienceSection = () => {
           {audiences.map((audience, index) => (
           <div
             key={index}
-            className={`rounded-3xl shadow-sm transition-transform duration-300 hover:-translate-y-6 ${
+            className={`group rounded-3xl shadow-sm transition-transform duration-300 hover:-translate-y-6 relative overflow-hidden ${
               audience.variant === "blue"
-                ? "flex flex-col items-start p-8 gap-4 rounded-2xl text-white relative overflow-hidden"
+                ? "flex flex-col items-start p-8 gap-4 rounded-2xl text-white"
                 : "p-8 bg-white text-foreground"
             }`}
               style={
@@ -57,7 +57,7 @@ const TargetAudienceSection = () => {
             >
               <div 
                 className={`absolute bottom-0 left-0 right-0 h-1 transition-opacity duration-300 ${
-                  audience.variant === "blue" ? "opacity-100" : "opacity-0 hover:opacity-100"
+                  audience.variant === "blue" ? "opacity-100" : "opacity-0 group-hover:opacity-100"
                 }`}
                 style={{
                   background: "linear-gradient(90deg, #9595E8 0%, #E737A3 100%)",

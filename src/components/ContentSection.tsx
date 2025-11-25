@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import ipadImage from "@/assets/ipad-mini.png";
+import contentBackground from "@/assets/content-background.png";
 
 const ContentSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-navy-primary via-navy-light to-purple-900">
+    <section className="py-20 relative overflow-hidden" style={{ backgroundImage: `url(${contentBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-white">

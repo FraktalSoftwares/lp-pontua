@@ -28,7 +28,7 @@ const HeroSection = () => {
         </div>
 
         <div className="text-center">
-          <Button variant="pink" size="lg" className="text-base px-12">
+          <Button variant="pink" size="lg" className="hidden text-base px-12">
             Assinar agora
           </Button>
         </div>

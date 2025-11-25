@@ -50,7 +50,9 @@ const TargetAudienceSection = () => {
                       background: "linear-gradient(100.85deg, #020173 -13.15%, #0302B5 108.02%)",
                       boxShadow: "0px 4px 80px 6px rgba(0, 0, 0, 0.06)",
                     }
-                  : undefined
+                  : {
+                      boxShadow: "0px 4px 80px 6px #0000000F",
+                    }
               }
             >
               {audience.variant === "blue" && (

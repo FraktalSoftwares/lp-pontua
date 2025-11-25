@@ -55,9 +55,11 @@ const TargetAudienceSection = () => {
             >
               {audience.variant === "blue" && (
                 <div 
-                  className="absolute bottom-0 left-0 right-0 h-1 rounded-b-2xl"
+                  className="absolute bottom-0 left-0 right-0 h-1"
                   style={{
                     background: "linear-gradient(90deg, #9595E8 0%, #E737A3 100%)",
+                    borderBottomLeftRadius: "16px",
+                    borderBottomRightRadius: "16px",
                   }}
                 />
               )}

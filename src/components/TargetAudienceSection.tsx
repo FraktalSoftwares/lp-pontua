@@ -39,10 +39,10 @@ const TargetAudienceSection = () => {
           {audiences.map((audience, index) => (
             <div
               key={index}
-              className={`p-8 rounded-3xl shadow-sm ${
+              className={`p-8 rounded-3xl ${
                 audience.variant === "blue"
-                  ? "bg-gradient-to-b from-navy-deep via-blue-cta to-pink-primary text-white"
-                  : "bg-white text-foreground"
+                  ? "bg-navy-deep text-white shadow-[0_8px_0_0_rgb(231,55,163)]"
+                  : "bg-white text-foreground shadow-sm"
               }`}
             >
               <div

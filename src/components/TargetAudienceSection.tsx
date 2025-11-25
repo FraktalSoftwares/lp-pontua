@@ -41,14 +41,14 @@ const TargetAudienceSection = () => {
               key={index}
               className={`rounded-3xl shadow-sm ${
                 audience.variant === "blue"
-                  ? "flex flex-col items-start p-5 gap-4 w-[280px] h-[230px] rounded-2xl text-white"
+                  ? "flex flex-col items-start p-8 gap-4 rounded-2xl text-white relative"
                   : "p-8 bg-white text-foreground"
               }`}
               style={
                 audience.variant === "blue"
                   ? {
                       background: "linear-gradient(100.85deg, #020173 -13.15%, #0302B5 108.02%)",
-                      boxShadow: "0px 4px 80px 6px rgba(0, 0, 0, 0.06)",
+                      boxShadow: "0px 4px 80px 6px rgba(0, 0, 0, 0.06), 0px 6px 0px 0px hsl(var(--pink-vivid))",
                     }
                   : undefined
               }

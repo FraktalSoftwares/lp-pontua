@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Agilidade, eficiência e inteligência para correção e feedback de redações.
+            Sua plataforma de correção de redações com inteligência artificial para professores e escolas
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
             Otimize seu tempo com uma correção ágil e precisa. O Pontua AI te ajuda a analisar redações rapidamente, fornecendo feedback detalhado e estruturado para melhorar a escrita dos seus alunos.

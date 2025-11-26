@@ -5,20 +5,20 @@ const TargetAudienceSection = () => {
   const audiences = [
     {
       icon: Clock,
-      title: "Professores e corretores",
-      description: "Professores e corretores que querem mais eficiência e precisão na correção de redações.",
+      title: "PROFESSORES E CORRETORES",
+      description: "Mais eficiência e precisão na correção de redações, feedbacks padronizados e suporte para a definição das melhores estratégias pedagógicas.",
       variant: "white" as const,
     },
     {
       icon: CheckCircle2,
-      title: "Gestores escolares",
-      description: "Gestores escolares que desejam acompanhar a qualidade das correções e a evolução dos alunos.",
+      title: "GESTORES ESCOLARES",
+      description: "Gestão de equipe, acompanhamento da qualidade das correções e análise da evolução do desempenho dos alunos.",
       variant: "blue" as const,
     },
     {
       icon: Clock,
-      title: "Escolas e cursinhos",
-      description: "Escolas e cursinhos que buscam uma solução moderna e baseada em inteligência artificial para potencializar o ensino da escrita,",
+      title: "ESCOLAS E CURSOS PRÉ-VESTIBULARES",
+      description: "Redução de até 70% o tempo de correção, acompanhamento da evolução dos estudantes e apoio à gestão pedagógica com dados confiáveis. Solução integrada para fortalecer o ensino com autonomia pedagógica, tecnologia e gestão educacional para elevar o nível da produção textual e impulsionar os resultados da sua empresa.",
       variant: "white" as const,
     },
   ];

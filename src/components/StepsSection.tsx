@@ -2,7 +2,7 @@ import stepsImage from "@/assets/steps-saida.png";
 
 const StepsSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section id="como-funciona" className="py-16 bg-white">
       <div className="container mx-auto px-6">
         <div className="flex justify-center">
           <img 

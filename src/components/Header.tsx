@@ -19,6 +19,16 @@ const Header = () => {
             <a href="#" className="hidden text-foreground hover:text-primary transition-colors font-medium">
               Início
             </a>
+            <a 
+              href="#como-funciona" 
+              className="text-foreground hover:text-primary transition-colors font-medium"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('como-funciona')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Como funciona
+            </a>
             <a href="https://app.pontuaai.com/login_escola?step=login" className="text-foreground hover:text-primary transition-colors font-medium">
               Login
             </a>
@@ -40,6 +50,17 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-border pt-4">
+            <a 
+              href="#como-funciona" 
+              className="text-foreground hover:text-primary transition-colors font-medium"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('como-funciona')?.scrollIntoView({ behavior: 'smooth' });
+                setIsMenuOpen(false);
+              }}
+            >
+              Como funciona
+            </a>
             <a 
               href="https://app.pontuaai.com/login_escola?step=login" 
               className="text-foreground hover:text-primary transition-colors font-medium"

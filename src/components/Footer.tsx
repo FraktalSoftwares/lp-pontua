@@ -1,4 +1,3 @@
-import { Instagram, Linkedin } from "lucide-react";
 import pontuaLogo from "@/assets/pontua-logo.svg";
 import footerBackground from "@/assets/footer-background.png";
 
@@ -12,24 +11,34 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-6">
           <img src={pontuaLogo} alt="PontuaAI" className="h-10 brightness-0 invert" />
           
-          <div className="flex gap-4">
+          {/* Links rápidos */}
+          <div className="flex flex-wrap justify-center gap-6 text-white/80">
             <a
-              href="https://www.instagram.com/pontuaai/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-navy-light flex items-center justify-center hover:bg-navy-primary transition-colors"
+              href="#"
+              className="hover:text-white transition-colors"
             >
-              <Instagram className="w-5 h-5 text-white" />
+              LGPD
             </a>
+            <span className="text-white/40">|</span>
             <a
-              href="https://linkedin.com/in/pontuaai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-navy-light flex items-center justify-center hover:bg-navy-primary transition-colors"
+              href="#"
+              className="hover:text-white transition-colors"
             >
-              <Linkedin className="w-5 h-5 text-white" />
+              Termos de Uso
+            </a>
+            <span className="text-white/40">|</span>
+            <a
+              href="#"
+              className="hover:text-white transition-colors"
+            >
+              Política de Privacidade
             </a>
           </div>
+
+          {/* Copyright */}
+          <p className="text-white/60 text-sm text-center">
+            PONTUA AI. Copyright © 2025. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

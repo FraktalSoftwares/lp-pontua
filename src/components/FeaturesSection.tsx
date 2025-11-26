@@ -9,19 +9,19 @@ const FeaturesSection = () => {
       icon: null,
       iconImage: iconPropostas,
       title: "Propostas otimizadas",
-      description: "Otimize a criação de propostas para redações com base nos principais vestibulares do Brasil",
+      description: "Otimize a criação de propostas de redação de acordo com temas e critérios dos maiores vestibulares do Brasil.",
     },
     {
       icon: null,
       iconImage: iconAgilidade,
       title: "Agilidade e precisão",
-      description: "Corrija redações com mais rapidez e precisão, respeitando gêneros e competências exigidos",
+      description: "Corrija redações com mais rapidez e qualidade, respeitando os critérios e as competências exigidas.",
     },
     {
       icon: null,
       iconImage: iconMonitoramento,
       title: "Monitoramento da evolução",
-      description: "Monitore a evolução dos alunos e a qualidade das correções dos professores",
+      description: "Monitore, em tempo real, a evolução da escrita dos alunos e avalie a qualidade das correções realizadas pelos professores. Tenha controle, insights pedagógicos e dados que ajudam a melhorar o desempenho geral da sua empresa.",
     },
   ];
 
@@ -29,7 +29,7 @@ const FeaturesSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground max-w-4xl mx-auto">
-          Crie propostas de redação alinhadas aos vestibulares e avalie o desempenho de alunos e professores com inteligência artificial
+          Crie propostas para redações com base nos principais vestibulares do Brasil
         </h2>
 
         <div className="grid md:grid-cols-2 gap-16 items-center mt-16">

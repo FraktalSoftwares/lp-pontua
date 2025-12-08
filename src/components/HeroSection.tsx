@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Sua plataforma de correção de redações com inteligência artificial para professores e escolas
+            A plataforma com inteligência artificial mais completa para ensino,  correção e análise de produção textual
           </h1>
         </div>
       </div>

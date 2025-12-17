@@ -2,9 +2,11 @@ import { Button } from "@/components/ui/button";
 import pontuaLogo from "@/assets/pontua-logo.svg";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import ContactDialog from "./ContactDialog";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
@@ -32,8 +34,12 @@ const Header = () => {
             <a href="https://app.pontuaai.com/login_escola?step=login" className="text-foreground hover:text-primary transition-colors font-medium">
               Login
             </a>
-            <Button variant="cta" size="lg" className="hidden">
-              Assinar agora
+            <Button 
+              variant="cta" 
+              size="lg"
+              onClick={() => setIsContactOpen(true)}
+            >
+              Contato
             </Button>
           </nav>
 
@@ -68,9 +74,22 @@ const Header = () => {
             >
               Login
             </a>
+            <Button 
+              variant="cta" 
+              size="lg"
+              onClick={() => {
+                setIsContactOpen(true);
+                setIsMenuOpen(false);
+              }}
+              className="w-full"
+            >
+              Contato
+            </Button>
           </nav>
         )}
       </div>
+
+      <ContactDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
     </header>
   );
 };

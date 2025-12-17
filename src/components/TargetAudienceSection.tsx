@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Clock, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+import ContactDialog from "./ContactDialog";
 
 const TargetAudienceSection = () => {
+  const [isContactOpen, setIsContactOpen] = useState(false);
   const audiences = [
     {
-      icon: Clock,
+      icon: CheckCircle2,
       title: "PROFESSORES E CORRETORES",
       description: "Mais eficiência e precisão na correção de redações, feedbacks padronizados e suporte para a definição das melhores estratégias pedagógicas.",
       variant: "white" as const,
@@ -16,7 +19,7 @@ const TargetAudienceSection = () => {
       variant: "blue" as const,
     },
     {
-      icon: Clock,
+      icon: CheckCircle2,
       title: "ESCOLAS E CURSOS PRÉ-VESTIBULARES",
       description: "Redução de até 70% o tempo de correção, acompanhamento da evolução dos estudantes e apoio à gestão pedagógica com dados confiáveis. Solução integrada para fortalecer o ensino com autonomia pedagógica, tecnologia e gestão educacional para elevar o nível da produção textual e impulsionar os resultados da sua empresa.",
       variant: "white" as const,
@@ -69,12 +72,12 @@ const TargetAudienceSection = () => {
                 className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${
                   audience.variant === "blue"
                     ? "bg-blue-400/80"
-                    : "bg-green-light"
+                    : "bg-blue-400/80"
                 }`}
               >
                 <audience.icon
                   className={`w-8 h-8 ${
-                    audience.variant === "blue" ? "text-white" : "text-green-icon"
+                    audience.variant === "blue" ? "text-white" : "text-white"
                   }`}
                 />
               </div>
@@ -87,11 +90,18 @@ const TargetAudienceSection = () => {
         </div>
 
         <div className="text-center">
-          <Button variant="pink" size="lg" className="hidden">
-            Assinar agora
+          <Button 
+            variant="pink" 
+            size="lg" 
+            className="text-sm sm:text-base px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full"
+            onClick={() => setIsContactOpen(true)}
+          >
+            CONTRATE AGORA
           </Button>
         </div>
       </div>
+
+      <ContactDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
     </section>
   );
 };

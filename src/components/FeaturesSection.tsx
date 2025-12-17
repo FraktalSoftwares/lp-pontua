@@ -1,7 +1,7 @@
 import iconPropostas from "@/assets/icon-propostas.png";
 import iconAgilidade from "@/assets/icon-agilidade.png";
 import iconMonitoramento from "@/assets/icon-monitoramento.png";
-import featuresImage from "@/assets/features-image.png";
+import featuresImage from "@/assets/mulher-feliz.jpg";
 
 const FeaturesSection = () => {
   const features = [
@@ -26,25 +26,30 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <section 
+      className="py-20 relative overflow-hidden min-h-[600px] md:min-h-[700px]"
+      style={{ 
+        backgroundImage: `url(${featuresImage})`, 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Overlay para melhorar legibilidade */}
+      <div className="absolute inset-0 bg-white/80"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground max-w-4xl mx-auto">
           Crie propostas para redações com base nos principais vestibulares do Brasil
         </h2>
 
         <div className="grid md:grid-cols-2 gap-16 items-center mt-16">
-          <div className="relative z-20 mx-auto md:mx-0">
-            <img 
-              src={featuresImage} 
-              alt="Interface do PontuaAI" 
-              className="relative z-10 rounded-2xl w-full h-auto"
-            />
-          </div>
+          {/* Espaço vazio para mostrar o background */}
+          <div className="hidden md:block"></div>
 
           <div className="space-y-8 mx-auto md:mx-0 max-w-lg md:max-w-none">
             {features.map((feature, index) => (
-              <div key={index} className="group flex items-start gap-4 relative pl-4">
-                <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-border-accent origin-top transition-all duration-300 h-1/2 group-hover:h-full" />
+              <div key={index} className="group flex items-start gap-4 relative pl-4 bg-white/90 p-4 rounded-lg backdrop-blur-sm">
                 <div className="flex-shrink-0 w-14 h-14 rounded-full bg-navy-deep flex items-center justify-center overflow-hidden">
                   {feature.iconImage ? (
                     <img src={feature.iconImage} alt="" className="w-full h-full object-cover" />

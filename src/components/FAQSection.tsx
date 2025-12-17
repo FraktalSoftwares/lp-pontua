@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -7,8 +8,10 @@ import {
 import { Button } from "@/components/ui/button";
 import { Instagram, Linkedin } from "lucide-react";
 import faqBackground from "@/assets/faq-background.png";
+import ContactDialog from "./ContactDialog";
 
 const FAQSection = () => {
+  const [isContactOpen, setIsContactOpen] = useState(false);
   const faqsColumn1 = [
     {
       question: "Para quem a plataforma é indicada?",
@@ -70,9 +73,12 @@ const FAQSection = () => {
     >
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ficou alguma dúvida? Entre em contato com a gente!
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Perguntas frequentes
           </h2>
+          <p className="text-xl text-white/90 mb-6">
+            Ficou alguma dúvida? Entre em contato com a gente!
+          </p>
           
           {/* Ícones de redes sociais */}
           <div className="flex justify-center gap-6 mt-6">
@@ -134,11 +140,18 @@ const FAQSection = () => {
         </div>
 
         <div className="text-center">
-          <Button variant="pink" size="lg" className="hidden">
-            Assinar agora
+          <Button 
+            variant="pink" 
+            size="lg" 
+            className="text-sm sm:text-base px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full"
+            onClick={() => setIsContactOpen(true)}
+          >
+            CONTRATE AGORA
           </Button>
         </div>
       </div>
+
+      <ContactDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
     </section>
   );
 };

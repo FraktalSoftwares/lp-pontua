@@ -13,7 +13,14 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img src={pontuaLogo} alt="PontuaAI" className="h-8" />
+            <a 
+              href="https://app.pontuaai.com/?step=login" 
+              className="flex items-center hover:opacity-80 transition-opacity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={pontuaLogo} alt="PontuaAI" className="h-8" />
+            </a>
           </div>
           
           {/* Desktop Navigation */}

@@ -43,7 +43,7 @@ const NewSection = () => {
     },
     {
       title: "Análise de dados",
-      description: "monitoramento da evolução de cada aluno e gestão escolar com dados das redações"
+      description: "monitoramento do desempenho de cada aluno e gestão escolar com dados das redações"
     }
   ];
 
@@ -75,7 +75,7 @@ const NewSection = () => {
               {benefits.map((benefit, index) => (
                 <div 
                   key={index} 
-                  className="border-b border-white/20 pb-2"
+                  className={`pb-2 ${index < benefits.length - 1 ? 'border-b border-white/20' : ''}`}
                 >
                   <button
                     onClick={() => toggleBenefit(index)}
@@ -103,6 +103,13 @@ const NewSection = () => {
                   </div>
                 </div>
               ))}
+            </div>
+            
+            {/* Referência do asterisco */}
+            <div className="mt-6 pt-4 border-t border-white/20">
+              <p className="text-xs md:text-sm text-white/70">
+                *Ver planos ativos para esta modalidade de contratação.
+              </p>
             </div>
           </div>
         </div>

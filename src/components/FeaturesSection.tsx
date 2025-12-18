@@ -1,9 +1,12 @@
+import { useState } from "react";
 import iconPropostas from "@/assets/icon-propostas.png";
 import iconAgilidade from "@/assets/icon-agilidade.png";
 import iconMonitoramento from "@/assets/icon-monitoramento.png";
 import featuresImage from "@/assets/mulher-feliz.jpg";
+import ContactDialog from "./ContactDialog";
 
 const FeaturesSection = () => {
+  const [isContactOpen, setIsContactOpen] = useState(false);
   const features = [
     {
       icon: null,
@@ -20,7 +23,7 @@ const FeaturesSection = () => {
     {
       icon: null,
       iconImage: iconMonitoramento,
-      title: "Monitoramento da evolução",
+      title: "Monitoramento do desempenho",
       description: "Monitore, em tempo real, a evolução da escrita dos alunos e avalie a qualidade das correções realizadas pelos professores. Tenha controle, insights pedagógicos e dados que ajudam a melhorar o desempenho geral da sua empresa.",
     },
   ];
@@ -30,8 +33,8 @@ const FeaturesSection = () => {
       className="py-20 relative overflow-hidden min-h-[600px] md:min-h-[700px]"
       style={{ 
         backgroundImage: `url(${featuresImage})`, 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center',
+        backgroundSize: 'auto 100%', 
+        backgroundPosition: 'left center',
         backgroundRepeat: 'no-repeat'
       }}
     >
@@ -39,7 +42,11 @@ const FeaturesSection = () => {
       <div className="absolute inset-0 bg-white/80"></div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground max-w-4xl mx-auto">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-2 text-foreground max-w-4xl mx-auto">
+          Que tal unir o tradicional com a tecnologia?
+        </h1>
+        
+        <h2 className="text-lg md:text-xl lg:text-2xl font-medium text-center mb-4 text-muted-foreground max-w-4xl mx-auto">
           Crie propostas para redações com base nos principais vestibulares do Brasil
         </h2>
 
@@ -63,9 +70,21 @@ const FeaturesSection = () => {
                 </div>
               </div>
             ))}
+            
+            {/* Botão Solicitar Proposta */}
+            <div className="flex justify-center mt-8">
+              <button 
+                className="bg-pink-primary hover:opacity-90 text-white font-semibold py-3 px-8 rounded-full transition-opacity duration-200 shadow-lg"
+                onClick={() => setIsContactOpen(true)}
+              >
+                Solicitar proposta
+              </button>
+            </div>
           </div>
         </div>
       </div>
+
+      <ContactDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
     </section>
   );
 };

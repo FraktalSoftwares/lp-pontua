@@ -8,9 +8,12 @@ const HeroSection = () => {
 
   return (
     <>
-    <section className="relative min-h-screen pt-24 pb-16 overflow-hidden flex flex-col justify-between" style={{ backgroundImage: `url(${heroBackground})`, backgroundSize: 'cover', backgroundPosition: 'right center', backgroundRepeat: 'no-repeat' }}>
-      {/* Overlay gradiente para legibilidade do texto */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+    <section
+      className="relative min-h-[70vh] md:min-h-screen pt-24 pb-16 overflow-hidden flex flex-col justify-between bg-[#1A0C6E] md:bg-transparent bg-contain md:bg-cover bg-no-repeat bg-center md:bg-[position:right_center]"
+      style={{ backgroundImage: `url(${heroBackground})` }}
+    >
+      {/* Overlay gradiente para legibilidade do texto (apenas md+ — no mobile a imagem fica contida com letterbox sólido) */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent hidden md:block"></div>
       
       {/* Decorative circles */}
       <div className="absolute top-20 right-1/4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl hidden md:block z-10"></div>

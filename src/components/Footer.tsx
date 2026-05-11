@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import pontuaLogo from "@/assets/pontua-logo.svg";
 import footerBackground from "@/assets/footer-background.png";
 
@@ -13,26 +14,26 @@ const Footer = () => {
           
           {/* Links rápidos */}
           <div className="flex flex-wrap justify-center gap-6 text-white/80">
-            <a
-              href="#"
+            <Link
+              to="/lgpd"
               className="hover:text-white transition-colors"
             >
               LGPD
-            </a>
+            </Link>
             <span className="text-white/40">|</span>
-            <a
-              href="#"
+            <Link
+              to="/termos-de-uso"
               className="hover:text-white transition-colors"
             >
               Termos de Uso
-            </a>
+            </Link>
             <span className="text-white/40">|</span>
-            <a
-              href="#"
+            <Link
+              to="/politica-de-privacidade"
               className="hover:text-white transition-colors"
             >
               Política de Privacidade
-            </a>
+            </Link>
           </div>
 
           {/* Copyright */}

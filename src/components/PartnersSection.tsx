@@ -52,10 +52,10 @@ const PartnersSection = () => {
                 className="hover:scale-105 transition-transform duration-300"
               >
                 {partner.image ? (
-                  <img 
-                    src={partner.image} 
+                  <img
+                    src={partner.image}
                     alt={partner.alt}
-                    className="max-w-[200px] md:max-w-[280px] h-auto object-contain rounded-[10px]"
+                    className="h-20 md:h-28 w-auto max-w-[200px] md:max-w-[280px] object-contain rounded-[10px]"
                   />
                 ) : (
                   <span className="text-white text-sm text-center font-medium">

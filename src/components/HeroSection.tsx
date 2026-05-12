@@ -9,28 +9,36 @@ const HeroSection = () => {
   return (
     <>
     <section
-      className="relative min-h-[70vh] md:min-h-screen pt-24 pb-16 overflow-hidden flex flex-col justify-between bg-[#1A0C6E] md:bg-transparent bg-contain md:bg-cover bg-no-repeat bg-center md:bg-[position:right_center]"
+      className="relative overflow-hidden md:min-h-screen md:pt-24 md:pb-16 md:flex md:flex-col md:justify-between md:bg-cover md:bg-no-repeat md:bg-[position:right_center]"
       style={{ backgroundImage: `url(${heroBackground})` }}
     >
-      {/* Overlay gradiente para legibilidade do texto (apenas md+ — no mobile a imagem fica contida com letterbox sólido) */}
+      <img
+        src={heroBackground}
+        alt=""
+        loading="eager"
+        fetchPriority="high"
+        className="md:hidden w-full h-auto block"
+      />
+
+      {/* Overlay gradiente para legibilidade do texto (apenas md+) */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent hidden md:block"></div>
-      
+
       {/* Decorative circles */}
       <div className="absolute top-20 right-1/4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl hidden md:block z-10"></div>
       <div className="absolute top-40 left-1/3 w-16 h-16 bg-red-500/20 rounded-full blur-xl hidden md:block z-10"></div>
-      
+
       <div className="container mx-auto px-4 md:px-6 relative z-20">
         <div className="max-w-6xl mx-auto">
           {/* Texto removido conforme solicitado */}
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 pb-8 relative z-20">
+      <div className="container mx-auto px-4 md:px-6 mt-10 md:mt-0 md:pb-8 flex justify-center md:block relative z-20">
         <div className="max-w-6xl mx-auto">
-          <Button 
-            variant="pink" 
-            size="lg" 
-            className="text-sm sm:text-base px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full w-full sm:w-auto"
+          <Button
+            variant="pink"
+            size="lg"
+            className="text-sm sm:text-base px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full"
             onClick={() => setIsContactOpen(true)}
           >
             CONTRATE AGORA

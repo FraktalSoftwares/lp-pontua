@@ -67,7 +67,7 @@ const StepsSection = () => {
     <section id="como-funciona" className="py-16 md:py-12 bg-white">
       <div className="container mx-auto px-6">
         {/* Título */}
-        <div className="text-center mb-12 md:mb-6">
+        <div className="text-center mb-12 md:mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             Veja como é simples utilizar nossa plataforma
           </h2>

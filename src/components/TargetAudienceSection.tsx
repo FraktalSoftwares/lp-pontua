@@ -27,9 +27,9 @@ const TargetAudienceSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 md:py-14 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 md:mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Para quem é a plataforma?
           </h2>
@@ -38,14 +38,14 @@ const TargetAudienceSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12 md:mb-8">
           {audiences.map((audience, index) => (
           <div
             key={index}
             className={`group rounded-3xl shadow-sm transition-transform duration-300 hover:-translate-y-6 relative overflow-hidden ${
               audience.variant === "blue"
-                ? "flex flex-col items-start p-8 gap-4 rounded-2xl text-white"
-                : "p-8 bg-white text-foreground"
+                ? "flex flex-col items-start p-8 md:p-6 gap-4 rounded-2xl text-white"
+                : "p-8 md:p-6 bg-white text-foreground"
             }`}
               style={
                 audience.variant === "blue"
@@ -69,7 +69,7 @@ const TargetAudienceSection = () => {
                 }}
               />
               <div
-                className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${
+                className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 md:mb-4 ${
                   audience.variant === "blue"
                     ? "bg-blue-400/80"
                     : "bg-blue-400/80"

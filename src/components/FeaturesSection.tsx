@@ -30,7 +30,7 @@ const FeaturesSection = () => {
 
   return (
     <section 
-      className="py-20 relative overflow-hidden min-h-[600px] md:min-h-[700px]"
+      className="py-20 md:py-14 relative overflow-hidden min-h-[600px]"
       style={{ 
         backgroundImage: `url(${featuresImage})`, 
         backgroundSize: 'auto 100%', 
@@ -50,11 +50,11 @@ const FeaturesSection = () => {
           Crie propostas para redações com base nos principais vestibulares do Brasil
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center mt-16">
+        <div className="grid md:grid-cols-2 gap-16 md:gap-10 items-center mt-16 md:mt-10">
           {/* Espaço vazio para mostrar o background */}
           <div className="hidden md:block"></div>
 
-          <div className="space-y-8 mx-auto md:mx-0 max-w-lg md:max-w-none">
+          <div className="space-y-8 md:space-y-6 mx-auto md:mx-0 max-w-lg md:max-w-none">
             {features.map((feature, index) => (
               <div key={index} className="group flex items-start gap-4 relative pl-4 bg-white/90 p-4 rounded-lg backdrop-blur-sm">
                 <div className="flex-shrink-0 w-14 h-14 rounded-full bg-navy-deep flex items-center justify-center overflow-hidden">
@@ -72,7 +72,7 @@ const FeaturesSection = () => {
             ))}
             
             {/* Botão Solicitar Proposta */}
-            <div className="flex justify-center mt-8">
+            <div className="flex justify-center mt-8 md:mt-6">
               <button 
                 className="bg-pink-primary hover:opacity-90 text-white font-semibold py-3 px-8 rounded-full transition-opacity duration-200 shadow-lg"
                 onClick={() => setIsContactOpen(true)}

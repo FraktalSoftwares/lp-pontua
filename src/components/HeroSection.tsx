@@ -17,12 +17,10 @@ const HeroSection = () => {
         aria-hidden="true"
       />
 
-      <img
-        src={heroBackground}
-        alt=""
-        loading="eager"
-        fetchPriority="high"
-        className="md:hidden w-full h-auto block"
+      <div
+        className="md:hidden w-full aspect-[4/3] bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+        aria-hidden="true"
       />
 
       {/* Overlay gradiente para legibilidade do texto (apenas md+) */}

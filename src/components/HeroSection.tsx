@@ -9,9 +9,14 @@ const HeroSection = () => {
   return (
     <>
     <section
-      className="relative overflow-hidden md:min-h-screen md:pt-24 md:pb-16 md:flex md:flex-col md:justify-between md:bg-cover md:bg-no-repeat md:bg-[position:right_center]"
-      style={{ backgroundImage: `url(${heroBackground})` }}
+      className="relative overflow-hidden md:min-h-screen md:pt-24 md:pb-16 md:flex md:flex-col md:justify-between"
     >
+      <div
+        className="absolute inset-0 hidden md:block bg-cover bg-no-repeat bg-[position:right_center]"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+        aria-hidden="true"
+      />
+
       <img
         src={heroBackground}
         alt=""

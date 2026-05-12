@@ -5,8 +5,7 @@ const TermosDeUso = () => {
     <LegalPage title="Termos de Serviço e Condições de Uso" updatedAt="08 de maio de 2026">
       <p>
         Bem-vindo à <strong>PontuaAI</strong>. Ao navegar ou utilizar nosso site
-        (<a href="https://www.pontuaai.com" target="_blank" rel="noopener noreferrer">[www.pontuaai.com](https://www.pontuaai.com)</a>),
-        você estabelece um contrato legal conosco, aceitando integralmente as
+        www.pontuaai.com, você estabelece um contrato legal conosco, aceitando integralmente as
         diretrizes descritas neste documento.
       </p>
       <p>

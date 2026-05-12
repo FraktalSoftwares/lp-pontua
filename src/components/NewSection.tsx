@@ -49,7 +49,7 @@ const NewSection = () => {
 
   return (
     <section 
-      className="py-12 md:py-20 relative overflow-hidden" 
+      className="py-12 md:py-14 relative overflow-hidden"
       style={{ 
         backgroundImage: `url(${newSectionBackground})`, 
         backgroundSize: 'cover', 
@@ -63,11 +63,11 @@ const NewSection = () => {
 
           {/* Conteúdo à direita */}
           <div className="text-white">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 md:mb-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 md:mb-4">
               Por que professores e escolas escolhem a Pontua AI?
             </h2>
 
-            <h3 className="text-lg sm:text-xl font-bold text-pink-500 mb-4 md:mb-6">
+            <h3 className="text-lg sm:text-xl font-bold text-pink-500 mb-4 md:mb-4">
               Benefícios que só a Pontua AI tem:
             </h3>
 
@@ -75,7 +75,7 @@ const NewSection = () => {
               {benefits.map((benefit, index) => (
                 <div 
                   key={index} 
-                  className={`pb-2 ${index < benefits.length - 1 ? 'border-b border-white/20' : ''}`}
+                  className={`pb-2 md:pb-1.5 ${index < benefits.length - 1 ? 'border-b border-white/20' : ''}`}
                 >
                   <button
                     onClick={() => toggleBenefit(index)}
@@ -106,7 +106,7 @@ const NewSection = () => {
             </div>
             
             {/* Referência do asterisco */}
-            <div className="mt-6 pt-4 border-t border-white/20">
+            <div className="mt-6 md:mt-4 pt-4 md:pt-3 border-t border-white/20">
               <p className="text-xs md:text-sm text-white/70">
                 *Ver planos ativos para esta modalidade de contratação.
               </p>

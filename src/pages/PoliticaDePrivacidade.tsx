@@ -5,7 +5,7 @@ const PoliticaDePrivacidade = () => {
     <LegalPage title="Política de Privacidade" updatedAt="07 de maio de 2026">
       <p>
         Esta Política de Privacidade integra os Termos de Serviço e Condições de Uso
-        do website <strong>[www.pontuaai.com](https://www.pontuaai.com)</strong> e torna-se válida a partir da
+        do website <strong>www.pontuaai.com</strong> e torna-se válida a partir da
         aceitação dos mesmos — ou seja, mediante a concordância no momento do seu
         primeiro acesso ou cadastro como usuário.
       </p>

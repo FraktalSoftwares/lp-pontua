@@ -31,7 +31,7 @@ const LGPD = () => {
         <li>
           <strong>Política de Privacidade:</strong> Mantemos diretrizes públicas e
           atualizadas que podem ser consultadas a qualquer momento em nosso site{" "}
-          (<a href="https://www.pontuaai.com" target="_blank" rel="noopener noreferrer">[www.pontuaai.com](https://www.pontuaai.com)</a>).
+          www.pontuaai.com.
         </li>
         <li>
           <strong>Melhoria Contínua:</strong> Operamos sob um plano de adequação

@@ -18,7 +18,7 @@ const HeroSection = () => {
       />
 
       <div
-        className="md:hidden w-full aspect-[4/3] bg-cover bg-center bg-no-repeat"
+        className="md:hidden w-full aspect-[4/3] bg-cover bg-right bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
         aria-hidden="true"
       />

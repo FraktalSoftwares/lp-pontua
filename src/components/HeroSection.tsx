@@ -44,7 +44,7 @@ const HeroSection = () => {
             className="text-sm sm:text-base px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full"
             onClick={() => setIsContactOpen(true)}
           >
-            CONTRATE AGORA
+            AGENDAR DEMONSTRAÇÃO
           </Button>
         </div>
       </div>
